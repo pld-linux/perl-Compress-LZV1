@@ -6,7 +6,7 @@ Summary(pl):	Modu³ Perla Compress::LZV1 - ekstremalnie lekka kompresja Lev-Zimpe
 Name:		perl-Compress-LZV1
 Version:	0.04
 Release:	2
-License:	GPL
+License:	GPL v2
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	1e6ee23a325a5f1475052576280d7250
