@@ -5,12 +5,12 @@ Summary:	Compress::LZV1 Perl module - extremely leight-weight Lev-Zimpel-Vogt co
 Summary(pl):	Modu³ Perla Compress::LZV1 - ekstremalnie lekka kompresja Lev-Zimpel-Vogt
 Name:		perl-Compress-LZV1
 Version:	0.04
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl-devel >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -35,7 +35,8 @@ aktualnego stanu wiedzy jest wolny od patentów.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
@@ -50,8 +51,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitearch}/Compress/LZV1.pm
-%dir %{perl_sitearch}/auto/Compress/LZV1
-%{perl_sitearch}/auto/Compress/LZV1/*.bs
-%attr(755,root,root) %{perl_sitearch}/auto/Compress/LZV1/*.so
+%{perl_vendorarch}/Compress/LZV1.pm
+%dir %{perl_vendorarch}/auto/Compress/LZV1
+%{perl_vendorarch}/auto/Compress/LZV1/*.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Compress/LZV1/*.so
 %{_mandir}/man3/*
