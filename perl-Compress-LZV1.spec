@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Compress
-%define		pnam	LZV1
+%define	pdir	Compress
+%define	pnam	LZV1
 Summary:	Compress::LZV1 Perl module - extremely leight-weight Lev-Zimpel-Vogt compression
 Summary(pl):	Modu³ Perla Compress::LZV1 - ekstremalnie lekka kompresja Lev-Zimpel-Vogt
 Name:		perl-Compress-LZV1
