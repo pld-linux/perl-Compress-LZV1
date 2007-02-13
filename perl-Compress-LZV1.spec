@@ -6,7 +6,7 @@
 %define		pdir	Compress
 %define		pnam	LZV1
 Summary:	Compress::LZV1 Perl module - extremely leight-weight Lev-Zimpel-Vogt compression
-Summary(pl.UTF-8):   Moduł Perla Compress::LZV1 - ekstremalnie lekka kompresja Lev-Zimpel-Vogt
+Summary(pl.UTF-8):	Moduł Perla Compress::LZV1 - ekstremalnie lekka kompresja Lev-Zimpel-Vogt
 Name:		perl-Compress-LZV1
 Version:	0.04
 Release:	3
