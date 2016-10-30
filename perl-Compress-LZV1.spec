@@ -9,7 +9,7 @@ Summary:	Compress::LZV1 Perl module - extremely leight-weight Lev-Zimpel-Vogt co
 Summary(pl.UTF-8):	Moduł Perla Compress::LZV1 - ekstremalnie lekka kompresja Lev-Zimpel-Vogt
 Name:		perl-Compress-LZV1
 Version:	0.04
-Release:	14
+Release:	15
 License:	GPL v2
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Compress/%{pdir}-%{pnam}-%{version}.tar.gz
